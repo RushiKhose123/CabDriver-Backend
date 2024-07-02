@@ -15,10 +15,12 @@ public class Booking {
     int id;
     @ManyToOne
     Customer customer;
-    int billAmount;
+    int billAmount ;
     String status;
     String feedback;
     @ManyToOne
     Driver driver;
+    private String startingLocation;
+    private String endingLocation;
 
 }

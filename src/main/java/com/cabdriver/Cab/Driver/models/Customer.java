@@ -1,5 +1,6 @@
 package com.cabdriver.Cab.Driver.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,6 +26,7 @@ public class Customer {
     private Long phoneNumber;
     private String address;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     private List<Booking> bookings;
 
