@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class Customer {
+public class Customer implements AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
