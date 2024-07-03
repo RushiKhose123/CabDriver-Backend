@@ -2,7 +2,6 @@ package com.cabdriver.Cab.Driver.models;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.util.List;
 
@@ -12,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @ToString
-public class Driver {
+public class Driver implements AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
